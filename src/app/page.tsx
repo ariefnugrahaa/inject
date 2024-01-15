@@ -10,12 +10,6 @@ const Home = () => {
     const handleMessage = (event: MessageEvent<any>) => {
       const token = event.data;
       setMessage(token.uuid);
-
-      try {
-        alert(token.uuid);
-      } catch (e) {
-        alert("error" + e);
-      }
     };
 
     window.addEventListener("message", handleMessage);
@@ -35,6 +29,15 @@ const Home = () => {
           className="cursor-pointer"
         >
           <h1>GO to mobile home</h1>
+        </button>
+      </Link>
+
+      <Link href={"login"}>
+        <button
+          style={{ background: "#dd1c33", cursor: "pointer", marginTop: 50 }}
+          className="cursor-pointer"
+        >
+          <h1>GO to Login</h1>
         </button>
       </Link>
     </div>
