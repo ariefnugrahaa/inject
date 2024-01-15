@@ -7,7 +7,7 @@ const Home = () => {
   const [loding, setLoading] = useState("");
 
   useEffect(() => {
-    const handleMessage = (event) => {
+    const handleMessage = (event: MessageEvent<any>) => {
       const token = event.data;
       setMessage(token.uuid);
 
