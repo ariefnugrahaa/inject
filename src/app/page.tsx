@@ -23,7 +23,7 @@ const Home = () => {
     <div>
       <h1>Next.js App</h1>
       <h1>ini tokenmu {message}</h1>
-      <Link href={"mobile/home"}>
+      <Link href={"home"}>
         <button
           style={{ background: "#1c1", cursor: "pointer", marginTop: 50 }}
           className="cursor-pointer"
