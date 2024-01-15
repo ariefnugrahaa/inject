@@ -10,16 +10,16 @@ const Home = () => {
 
   const handleClick = () => {
     // Navigasi ke halaman lain
-    router.push("/home");
+    window.location = "/home";
   };
 
   const handleClickLogin = () => {
     // Navigasi ke halaman lain
-    router.push("/login");
+    window.location = "/login";
   };
 
   useEffect(() => {
-    const handleMessage = (event: MessageEvent<any>) => {
+    const handleMessage = (event) => {
       const token = event.data;
       setMessage(token.uuid);
     };
