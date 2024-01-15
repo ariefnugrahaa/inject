@@ -14,8 +14,6 @@ const Home = () => {
   };
 
   const handleClickLogin = () => {
-    const router = useRouter();
-
     // Navigasi ke halaman lain
     router.push("/login");
   };
