@@ -21,7 +21,7 @@ const Home = () => {
   useEffect(() => {
     const handleMessage = (event) => {
       const token = event.data;
-      setMessage(token.uuid);
+      setMessage(token);
     };
 
     window.addEventListener("message", handleMessage);
@@ -34,7 +34,9 @@ const Home = () => {
   return (
     <div>
       <h1>Next.js App</h1>
-      <h1>ini tokenmu {message}</h1>
+      <h1>
+        ini tokenmu {message.token} dan ini uuid mu {message.uuid}
+      </h1>
       <button
         onClick={handleClick}
         style={{ background: "#1c1", cursor: "pointer", marginTop: 50 }}
