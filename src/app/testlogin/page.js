@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const Home = () => {
+const TestLogin = () => {
   const router = useRouter();
   const [message, setMessage] = useState("");
   const [loding, setLoading] = useState("");
@@ -56,4 +56,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default TestLogin;
