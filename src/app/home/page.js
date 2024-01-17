@@ -10,12 +10,12 @@ const Home = () => {
 
   const handleClick = () => {
     // Navigasi ke halaman lain
-    window.location = "/home";
+    window.location = "/testhome";
   };
 
   const handleClickLogin = () => {
     // Navigasi ke halaman lain
-    window.location = "/login";
+    window.location = "/testlogin";
   };
 
   useEffect(() => {
